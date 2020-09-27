@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "229730924897",
+    "firebase_url": "https://sim-physics-6e7b6.firebaseio.com",
+    "project_id": "sim-physics-6e7b6",
+    "storage_bucket": "sim-physics-6e7b6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:229730924897:android:222af787830f060f3e2d20",
+        "android_client_info": {
+          "package_name": "com.example.projetodefinitivo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "229730924897-petqhj8t9u903hpjtiujuc3145ef99pr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.projetodefinitivo",
+            "certificate_hash": "dc4a25f99d8fb94379c6c87c26976cae822b0792"
+          }
+        },
+        {
+          "client_id": "229730924897-0l5oas0b1honla1sebsiu4278u8mom3i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3qpo9KGWswHI95vKhxI4cvj37D8V8vyc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "229730924897-0l5oas0b1honla1sebsiu4278u8mom3i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

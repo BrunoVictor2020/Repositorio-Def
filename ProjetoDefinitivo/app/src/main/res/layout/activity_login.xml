@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity" >
+    tools:context=".LoginActivity" >
 
     <ImageView
         android:id="@+id/imageView"
@@ -18,11 +18,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/BG" />
+        app:srcCompat="@drawable/bg" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:gravity="center_horizontal"
         android:orientation="vertical"
         android:weightSum="100"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
@@ -58,7 +59,7 @@
                 app:srcCompat="@drawable/email" />
 
             <EditText
-                android:id="@+id/editText"
+                android:id="@+id/tilEmail"
                 android:layout_width="241dp"
                 android:layout_height="43dp"
                 android:layout_weight="20"
@@ -86,7 +87,7 @@
                 app:srcCompat="@drawable/senha" />
 
             <EditText
-                android:id="@+id/editText2"
+                android:id="@+id/tilPassword"
                 android:layout_width="241dp"
                 android:layout_height="43dp"
                 android:layout_weight="20"
@@ -97,13 +98,13 @@
         </LinearLayout>
 
         <ImageButton
-            android:id="@+id/imageButton2"
-            android:layout_width="match_parent"
+            android:id="@+id/btLogin"
+            android:layout_width="244dp"
             android:layout_height="79dp"
             android:layout_weight="10"
             android:background="#00FFFFFF"
             android:padding="25dp"
-            android:scaleType="centerInside"
+            android:scaleType="fitCenter"
             app:srcCompat="@drawable/entrar" />
 
         <LinearLayout
