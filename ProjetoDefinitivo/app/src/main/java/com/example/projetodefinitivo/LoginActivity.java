@@ -19,7 +19,7 @@ import com.google.firebase.auth.FirebaseUser;
 public class LoginActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     EditText tilEmail, tilPassword;
-    ImageButton btLogin;
+    ImageButton btLogin,btCadastrarse;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +28,14 @@ public class LoginActivity extends AppCompatActivity {
         tilEmail=findViewById(R.id.tilEmail);
         tilPassword=findViewById(R.id.tilPassword);
         btLogin=findViewById(R.id.btLogin);
+        btCadastrarse=findViewById(R.id.btCadastrarse);
 
+        btCadastrarse.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginActivity.this,CadastroActivity.class));
+            }
+        });
         btLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -56,18 +63,7 @@ public class LoginActivity extends AppCompatActivity {
                     }
                 });
     }
-    @Override
-    public void onStart() {
-        super.onStart();
-        // Check if user is signed in (non-null) and update UI accordingly.
-        FirebaseUser currentUser = mAuth.getCurrentUser();
-        if(currentUser != null){
-            updateUI(currentUser);
-        } else {
-            String msg="Erro ao autenticar usuário";
-            Toast.makeText(LoginActivity.this,msg,Toast.LENGTH_SHORT).show();
-        }
-    }
+
     private void updateUI (FirebaseUser firebaseUser){
         String msg="Iniciando Tela principal do app.";
         Toast.makeText(LoginActivity.this, msg, Toast.LENGTH_SHORT).show();
