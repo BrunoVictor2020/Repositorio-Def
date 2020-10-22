@@ -68,6 +68,6 @@ public class LoginActivity extends AppCompatActivity {
         String msg="Iniciando Tela principal do app.";
         Toast.makeText(LoginActivity.this, msg, Toast.LENGTH_SHORT).show();
         finish();
-        startActivity(new Intent(LoginActivity.this, CadastroActivity.class));
+        startActivity(new Intent(LoginActivity.this, AssuntosActivity.class));
     }
 }

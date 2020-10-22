@@ -25,6 +25,7 @@
         android:layout_height="match_parent"
         android:gravity="center_horizontal"
         android:orientation="vertical"
+        android:paddingTop="50dp"
         android:weightSum="100"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
@@ -65,7 +66,9 @@
                 android:layout_weight="20"
                 android:background="@drawable/barra"
                 android:ems="10"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -93,7 +96,9 @@
                 android:layout_weight="20"
                 android:background="@drawable/barra"
                 android:ems="10"
-                android:inputType="textPersonName|textPassword" />
+                android:inputType="textPersonName|textPassword"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp" />
 
         </LinearLayout>
 
